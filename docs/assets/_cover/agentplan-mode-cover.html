@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AgentPlan 模式的利弊 · 课程封面</title>
+<style>
+  :root {
+    --ink: #090909;
+    --paper: #f7f1df;
+    --paper-soft: #efe4c3;
+    --line: rgba(9, 9, 9, 0.18);
+    --line-strong: rgba(9, 9, 9, 0.58);
+    --green: #baff29;
+    --green-deep: #193b1f;
+    --red: #ff3f2e;
+    --red-deep: #4d100d;
+    --white: #fff9e8;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  body {
+    color: var(--ink);
+    background: var(--ink);
+    font-family:
+      "PingFang SC",
+      "Hiragino Sans GB",
+      "Microsoft YaHei",
+      Arial,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
+
+  .slide {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+      linear-gradient(90deg, var(--green) 0 31%, transparent 31% 69%, var(--red) 69% 100%),
+      linear-gradient(180deg, var(--paper) 0%, var(--paper-soft) 100%);
+  }
+
+  .slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.48;
+    background:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  .slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 50% 50%, transparent 0 31%, rgba(9, 9, 9, 0.16) 31.2% 31.4%, transparent 31.6%),
+      radial-gradient(circle at 50% 50%, transparent 0 42%, rgba(9, 9, 9, 0.12) 42.2% 42.4%, transparent 42.6%);
+  }
+
+  .corner {
+    position: absolute;
+    z-index: 5;
+    top: 44px;
+    width: 392px;
+    border-top: 4px solid var(--ink);
+    padding-top: 16px;
+    font-family: "Courier New", ui-monospace, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0.14em;
+  }
+
+  .corner.left {
+    left: 56px;
+  }
+
+  .corner.right {
+    right: 56px;
+    text-align: right;
+  }
+
+  .vertical-note {
+    position: absolute;
+    z-index: 5;
+    top: 174px;
+    bottom: 174px;
+    width: 34px;
+    display: grid;
+    place-items: center;
+    color: var(--paper);
+    background: var(--ink);
+    font-family: "Courier New", ui-monospace, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    writing-mode: vertical-rl;
+  }
+
+  .vertical-note.left {
+    left: 56px;
+  }
+
+  .vertical-note.right {
+    right: 56px;
+  }
+
+  .hero-band {
+    position: absolute;
+    z-index: 2;
+    left: 412px;
+    top: -80px;
+    width: 1096px;
+    height: 1240px;
+    background: var(--paper);
+    transform: skewX(-10deg);
+    box-shadow:
+      0 0 0 4px var(--ink),
+      34px 0 0 var(--ink),
+      -34px 0 0 var(--ink);
+  }
+
+  .hero-band::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 74px,
+        rgba(9, 9, 9, 0.1) 75px,
+        transparent 76px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent 0,
+        transparent 74px,
+        rgba(9, 9, 9, 0.08) 75px,
+        transparent 76px
+      );
+  }
+
+  .giant {
+    position: absolute;
+    z-index: 3;
+    left: 318px;
+    right: 318px;
+    top: 82px;
+    color: rgba(9, 9, 9, 0.06);
+    font-family:
+      "Songti SC",
+      "STSong",
+      "Noto Serif CJK SC",
+      serif;
+    font-size: 318px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: 0;
+    text-align: center;
+    writing-mode: vertical-rl;
+  }
+
+  .main-title {
+    position: absolute;
+    z-index: 6;
+    left: 360px;
+    right: 360px;
+    top: 238px;
+    margin: 0;
+    color: var(--ink);
+    font-family:
+      "Songti SC",
+      "STSong",
+      "Noto Serif CJK SC",
+      serif;
+    font-size: 138px;
+    font-weight: 900;
+    line-height: 1.02;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .main-title span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .main-title > span + span {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 32px 18px;
+    background: var(--paper);
+    box-shadow: 0 0 0 5px var(--ink);
+  }
+
+  .main-title .term {
+    position: relative;
+    display: inline-block;
+    padding: 0 22px 10px;
+    color: var(--paper);
+    background: var(--ink);
+  }
+
+  .main-title .term::before,
+  .main-title .term::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 138px;
+    height: 6px;
+    background: var(--ink);
+  }
+
+  .main-title .term::before {
+    right: 100%;
+  }
+
+  .main-title .term::after {
+    left: 100%;
+  }
+
+  .axis {
+    position: absolute;
+    z-index: 4;
+    left: 292px;
+    right: 292px;
+    top: 676px;
+    height: 10px;
+    background: var(--ink);
+  }
+
+  .axis::before,
+  .axis::after {
+    content: "";
+    position: absolute;
+    top: -21px;
+    width: 52px;
+    height: 52px;
+    border: 10px solid var(--ink);
+    background: var(--paper);
+    transform: rotate(45deg);
+  }
+
+  .axis::before {
+    left: 154px;
+  }
+
+  .axis::after {
+    right: 154px;
+  }
+
+  .keyword {
+    position: absolute;
+    z-index: 7;
+    top: 715px;
+    width: 452px;
+    border: 5px solid var(--ink);
+    padding: 28px 32px 32px;
+    background: var(--paper);
+    box-shadow: 18px 18px 0 var(--ink);
+  }
+
+  .keyword.left {
+    left: 266px;
+  }
+
+  .keyword.right {
+    right: 266px;
+  }
+
+  .keyword .index {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Courier New", ui-monospace, monospace;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+  }
+
+  .keyword strong {
+    display: block;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .keyword p {
+    margin: 16px 0 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.38;
+  }
+
+  .ledger {
+    position: absolute;
+    z-index: 7;
+    top: 286px;
+    width: 314px;
+  }
+
+  .ledger.good {
+    left: 76px;
+  }
+
+  .ledger.risk {
+    right: 76px;
+  }
+
+  .ledger-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid var(--ink);
+    padding: 14px 18px;
+    color: var(--paper);
+    background: var(--ink);
+  }
+
+  .ledger-title b {
+    font-family:
+      "Songti SC",
+      "STSong",
+      "Noto Serif CJK SC",
+      serif;
+    font-size: 76px;
+    line-height: 0.86;
+  }
+
+  .ledger-title span {
+    font-family: "Courier New", ui-monospace, monospace;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    writing-mode: vertical-rl;
+  }
+
+  .ledger ul {
+    display: grid;
+    gap: 12px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ledger li {
+    min-height: 74px;
+    border: 4px solid var(--ink);
+    padding: 14px 16px;
+    background: var(--paper);
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 1.24;
+  }
+
+  .ledger.good li {
+    box-shadow: 10px 10px 0 var(--green-deep);
+  }
+
+  .ledger.risk li {
+    box-shadow: -10px 10px 0 var(--red-deep);
+  }
+
+  .stamp {
+    position: absolute;
+    z-index: 8;
+    left: 50%;
+    bottom: 70px;
+    width: 356px;
+    height: 126px;
+    display: grid;
+    place-items: center;
+    margin-left: -178px;
+    border: 6px solid var(--ink);
+    color: var(--paper);
+    background: var(--ink);
+    transform: rotate(-2.5deg);
+    text-align: center;
+  }
+
+  .stamp b {
+    display: block;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .stamp span {
+    display: block;
+    margin-top: 10px;
+    font-family: "Courier New", ui-monospace, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+  }
+
+  .ruler {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 42px;
+    border-top: 5px solid var(--ink);
+    background:
+      repeating-linear-gradient(
+        90deg,
+        var(--ink) 0,
+        var(--ink) 4px,
+        transparent 4px,
+        transparent 40px
+      ),
+      var(--paper);
+  }
+
+  .cut-line {
+    position: absolute;
+    z-index: 5;
+    left: 930px;
+    top: 0;
+    bottom: 0;
+    width: 62px;
+    background: var(--ink);
+    transform: skewX(-10deg);
+  }
+
+  .cut-line span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: var(--paper);
+    font-family: "Courier New", ui-monospace, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    transform: translate(-50%, -50%) rotate(90deg);
+    white-space: nowrap;
+  }
+
+  .tag {
+    position: absolute;
+    z-index: 6;
+    bottom: 72px;
+    width: 330px;
+    border-top: 4px solid var(--ink);
+    padding-top: 14px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.42;
+  }
+
+  .tag.left {
+    left: 78px;
+    width: 240px;
+  }
+
+  .tag.right {
+    right: 78px;
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <main class="slide" aria-label="AgentPlan 模式的利弊课程封面">
+    <div class="hero-band" aria-hidden="true"></div>
+    <div class="giant" aria-hidden="true">计划</div>
+    <div class="cut-line" aria-hidden="true"><span>先计划　再执行　再复盘</span></div>
+
+    <div class="corner left">课程封面<br />第 01 讲</div>
+    <div class="corner right">智能体工作流<br />方法论拆解</div>
+    <div class="vertical-note left">收益面</div>
+    <div class="vertical-note right">代价面</div>
+
+    <h1 class="main-title">
+      <span><span class="term">AgentPlan</span></span>
+      <span>模式的利弊</span>
+    </h1>
+
+    <div class="axis" aria-hidden="true"></div>
+
+    <section class="keyword left" aria-label="先计划">
+      <span class="index">步骤一</span>
+      <strong>先计划</strong>
+      <p>把目标、路径和验收口径提前摊开。</p>
+    </section>
+
+    <section class="keyword right" aria-label="再执行">
+      <span class="index">步骤二</span>
+      <strong>再执行</strong>
+      <p>让行动有边界，但不被计划本身绑住。</p>
+    </section>
+
+    <section class="ledger good" aria-label="AgentPlan 的利">
+      <div class="ledger-title">
+        <b>利</b>
+        <span>更清晰</span>
+      </div>
+      <ul>
+        <li>共识更早建立</li>
+        <li>复杂任务更可控</li>
+        <li>过程更容易复盘</li>
+      </ul>
+    </section>
+
+    <section class="ledger risk" aria-label="AgentPlan 的弊">
+      <div class="ledger-title">
+        <b>弊</b>
+        <span>更笨重</span>
+      </div>
+      <ul>
+        <li>启动成本变高</li>
+        <li>容易产生计划错觉</li>
+        <li>过度规划会压低行动速度</li>
+      </ul>
+    </section>
+
+    <div class="tag left">适用于高风险、多步骤、多人协作任务。</div>
+    <div class="tag right">不适合低风险、即时反馈、一步完成的小任务。</div>
+
+    <div class="stamp">
+      <div>
+        <b>计划不是完成</b>
+        <span>执行才是证据</span>
+      </div>
+    </div>
+    <div class="ruler" aria-hidden="true"></div>
+  </main>
+</body>
+</html>
