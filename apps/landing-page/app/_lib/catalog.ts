@@ -60,8 +60,8 @@ function previewUrlFor(
   return filename ? `/previews/${bucket}/${filename}` : null;
 }
 
-const REPO_TREE = 'https://github.com/nexu-io/open-design/tree/main';
-const REPO_BLOB = 'https://github.com/nexu-io/open-design/blob/main';
+const REPO_TREE = 'https://github.com/Gary-Ge-xixi/open-design/tree/main';
+const REPO_BLOB = 'https://github.com/Gary-Ge-xixi/open-design/blob/main';
 
 // ---------------------------------------------------------------------------
 // Skills

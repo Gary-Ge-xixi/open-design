@@ -256,7 +256,7 @@ in {
       launchd.agents.open-design = {
         enable = true;
         config = {
-          Label = "io.nexu.open-design";
+          Label = "io.open-design.app";
           ProgramArguments = programArguments;
           RunAtLoad = true;
           KeepAlive = true;
@@ -271,7 +271,7 @@ in {
       launchd.agents.open-design-web = {
         enable = true;
         config = {
-          Label = "io.nexu.open-design-web";
+          Label = "io.open-design.app-web";
           ProgramArguments = [
             (lib.getExe caddy)
             "run"

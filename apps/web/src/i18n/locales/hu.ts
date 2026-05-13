@@ -41,7 +41,7 @@ export const hu: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'Kutatási előzetes',
-  'app.brandSubtitle': 'a Nexu Labs-tól',
+  'app.brandSubtitle': 'a Open Design-tól',
   'app.welcomeLoading': 'Munkaterület betöltése…',
 
   'settings.welcomeKicker': 'Üdvözlünk',
@@ -167,9 +167,9 @@ export const hu: Dict = {
   'settings.mediaProviderReloadSuccess': 'A médiaszolgáltatók beállításai újra lettek töltve a helyi démonból.',
   'settings.mediaProviderLoadError': 'Nem sikerült betölteni a médiaszolgáltatók beállításait a helyi démonból. Egyelőre a böngészőben mentett beállításokat használjuk.',
   'settings.privacy': 'Privacy',
-  'settings.privacyHint': 'What data is shared with the Open Design team',
+  'settings.privacyHint': 'What optional usage data can be shared',
   'settings.privacyConsentKicker': 'Help us improve Open Design',
-  'settings.privacyConsentLead': 'Open Design can share usage data with our team to help us improve. This includes:',
+  'settings.privacyConsentLead': 'Open Design can share optional usage data to help improve the product. This includes:',
   'settings.privacyConsentFooter': 'You can change either of these any time in Settings → Privacy. We never upload the contents of your generated artifact files.',
   'settings.privacyConsentShare': 'Help improve',
   'settings.privacyConsentDecline': 'Not now',

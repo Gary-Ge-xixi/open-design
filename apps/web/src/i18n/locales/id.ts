@@ -41,7 +41,7 @@ export const id: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'Pratinjau Riset',
-  'app.brandSubtitle': 'oleh Nexu Labs',
+  'app.brandSubtitle': 'oleh Open Design',
   'app.welcomeLoading': 'Memuat workspace...',
 
   'settings.welcomeKicker': 'Selamat datang',
@@ -165,9 +165,9 @@ export const id: Dict = {
   'settings.mediaProviderReloadSuccess': 'Pengaturan penyedia media berhasil dimuat ulang dari daemon lokal.',
   'settings.mediaProviderLoadError': 'Tidak dapat memuat pengaturan penyedia media dari daemon lokal. Untuk sementara menggunakan pengaturan yang tersimpan di browser.',
   'settings.privacy': 'Privacy',
-  'settings.privacyHint': 'What data is shared with the Open Design team',
+  'settings.privacyHint': 'What optional usage data can be shared',
   'settings.privacyConsentKicker': 'Help us improve Open Design',
-  'settings.privacyConsentLead': 'Open Design can share usage data with our team to help us improve. This includes:',
+  'settings.privacyConsentLead': 'Open Design can share optional usage data to help improve the product. This includes:',
   'settings.privacyConsentFooter': 'You can change either of these any time in Settings → Privacy. We never upload the contents of your generated artifact files.',
   'settings.privacyConsentShare': 'Help improve',
   'settings.privacyConsentDecline': 'Not now',

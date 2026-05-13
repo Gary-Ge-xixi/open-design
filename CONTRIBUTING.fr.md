@@ -24,7 +24,7 @@ une PR doit atteindre avant d’être mergée.
 | Améliorer la doc, porter une section en Français / Deutsch / 中文, corriger une faute | documentation | `README.md`, `README.fr.md`, `README.de.md`, `README.zh-CN.md`, `docs/`, `QUICKSTART.md` | une PR |
 
 Si vous ne savez pas dans quelle catégorie tombe votre idée, [ouvrez d'abord
-une discussion ou une issue](https://github.com/nexu-io/open-design/issues/new)
+une discussion ou une issue](https://github.com/Gary-Ge-xixi/open-design/issues/new)
 et nous vous orienterons vers la bonne surface.
 
 ---
@@ -35,7 +35,7 @@ Le setup complet en une page se trouve dans [`QUICKSTART.fr.md`](QUICKSTART.fr.m
 TL;DR pour contribuer :
 
 ```bash
-git clone https://github.com/nexu-io/open-design.git
+git clone https://github.com/Gary-Ge-xixi/open-design.git
 cd open-design
 corepack enable           # sélectionne la version de pnpm définie par packageManager
 pnpm install
@@ -391,7 +391,7 @@ afin de voir si la violation vient du modèle ou du prompt.
 ## Poser des questions
 
 - Question d'architecture, question de design, "bug ou mauvaise utilisation ?" →
-  [GitHub Discussions](https://github.com/nexu-io/open-design/discussions)
+  [GitHub Discussions](https://github.com/Gary-Ge-xixi/open-design/discussions)
   (préféré, car searchable pour la personne suivante).
 - "Comment écrire un Skill qui fait X ?" → ouvrez une discussion. Nous y
   répondrons et transformerons la réponse en ajout dans
@@ -430,12 +430,12 @@ ressemble le chemin pour devenir Mainteneur, les règles se trouvent dans
 **[`MAINTAINERS.md`](MAINTAINERS.md)**. La version courte :
 
 - Un Mainteneur peut examiner, approuver et fermer des issues. Le bouton
-  de merge reste à la Core Team — votre approbation compte tout de même
+  de merge reste à la repository owner — votre approbation compte tout de même
   comme l'approbation requise pour le merge.
 - Le seuil est de **≥ 20 merged PRs** plus une vérification publiée de la
   qualité du compte (anti-bot, anti-sock-puppet) plus un jugement de la
-  Core Team sur la qualité des contributions. Il n'y a pas de formulaire
-  de candidature ; la Core Team identifie les candidats en interne et
+  repository owner sur la qualité des contributions. Il n'y a pas de formulaire
+  de candidature ; la repository owner identifie les candidats en interne et
   prend contact.
 - Il n'y a **aucun quota, aucun SLAs, et aucun mandat fixe.** Se retirer
   est facile et réversible (Emeritus → retour quand la vie se calme).
@@ -445,11 +445,10 @@ ressemble le chemin pour devenir Mainteneur, les règles se trouvent dans
   points ci-dessus vous intéresse.
 
 Le tl;dr : livrez de bonnes PR, faites des reviews réfléchies, traînez
-dans les [Discussions][discussions] / sur [Discord][discord], et le reste
+dans les [Discussions][discussions], et le reste
 se fait tout seul.
 
-[discussions]: https://github.com/nexu-io/open-design/discussions
-[discord]: https://discord.gg/qhbcCH8Am4
+[discussions]: https://github.com/Gary-Ge-xixi/open-design/discussions
 
 ---
 

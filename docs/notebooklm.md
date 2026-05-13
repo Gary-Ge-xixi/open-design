@@ -19,7 +19,7 @@ From the repo root:
 
 ```bash
 pnpm exec tsx scripts/notebooklm-export-github.ts \
-  --repo nexu-io/open-design \
+  --repo Gary-Ge-xixi/open-design \
   --issues open \
   --prs open \
   --limit 50
@@ -35,7 +35,7 @@ You can override the output path:
 
 ```bash
 pnpm exec tsx scripts/notebooklm-export-github.ts \
-  --repo nexu-io/open-design \
+  --repo Gary-Ge-xixi/open-design \
   --out notebooklm/open-design-snapshot.md
 ```
 

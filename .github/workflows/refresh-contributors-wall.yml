@@ -42,7 +42,7 @@ jobs:
         with:
           app-id: ${{ secrets.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_APP_PRIVATE_KEY }}
-          owner: nexu-io
+          owner: Gary-Ge-xixi
           repositories: open-design
           permission-contents: write
           permission-pull-requests: write

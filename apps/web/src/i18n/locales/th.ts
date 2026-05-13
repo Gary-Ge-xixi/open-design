@@ -41,7 +41,7 @@ export const th: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'ตัวอย่างเพื่อการวิจัย',
-  'app.brandSubtitle': 'โดย Nexu Labs',
+  'app.brandSubtitle': 'โดย Open Design',
   'app.welcomeLoading': 'กำลังโหลดพื้นที่ทำงาน…',
 
   'settings.welcomeKicker': 'ยินดีต้อนรับ',

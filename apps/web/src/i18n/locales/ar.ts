@@ -41,7 +41,7 @@ export const ar: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'معاينة البحث',
-  'app.brandSubtitle': 'بواسطة Nexu Labs',
+  'app.brandSubtitle': 'بواسطة Open Design',
   'app.welcomeLoading': 'جاري تحميل مساحة العمل...',
 
   'settings.welcomeKicker': 'مرحباً',
@@ -167,9 +167,9 @@ export const ar: Dict = {
   'settings.mediaProviderReloadSuccess': 'تمت إعادة تحميل إعدادات موفري الوسائط من الـ daemon المحلي.',
   'settings.mediaProviderLoadError': 'تعذر تحميل إعدادات موفري الوسائط من الـ daemon المحلي. سيُستخدم مؤقتًا ما هو محفوظ في المتصفح.',
   'settings.privacy': 'Privacy',
-  'settings.privacyHint': 'What data is shared with the Open Design team',
+  'settings.privacyHint': 'What optional usage data can be shared',
   'settings.privacyConsentKicker': 'Help us improve Open Design',
-  'settings.privacyConsentLead': 'Open Design can share usage data with our team to help us improve. This includes:',
+  'settings.privacyConsentLead': 'Open Design can share optional usage data to help improve the product. This includes:',
   'settings.privacyConsentFooter': 'You can change either of these any time in Settings → Privacy. We never upload the contents of your generated artifact files.',
   'settings.privacyConsentShare': 'Help improve',
   'settings.privacyConsentDecline': 'Not now',

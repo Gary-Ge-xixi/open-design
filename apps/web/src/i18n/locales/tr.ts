@@ -41,7 +41,7 @@ export const tr: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'Önizleme Araştırması',
-  'app.brandSubtitle': 'Nexu Labs tarafından',
+  'app.brandSubtitle': 'Open Design tarafından',
   'app.welcomeLoading': 'Çalışma alanı yükleniyor…',
 
   'settings.welcomeKicker': 'Hoşgeldiniz',
@@ -157,9 +157,9 @@ export const tr: Dict = {
   'settings.mediaProviderReloadSuccess': 'Medya sağlayıcı ayarları yerel daemon’dan yeniden yüklendi.',
   'settings.mediaProviderLoadError': 'Medya sağlayıcı ayarları yerel daemon’dan yüklenemedi. Şimdilik tarayıcıya kaydedilen ayarlar kullanılıyor.',
   'settings.privacy': 'Privacy',
-  'settings.privacyHint': 'What data is shared with the Open Design team',
+  'settings.privacyHint': 'What optional usage data can be shared',
   'settings.privacyConsentKicker': 'Help us improve Open Design',
-  'settings.privacyConsentLead': 'Open Design can share usage data with our team to help us improve. This includes:',
+  'settings.privacyConsentLead': 'Open Design can share optional usage data to help improve the product. This includes:',
   'settings.privacyConsentFooter': 'You can change either of these any time in Settings → Privacy. We never upload the contents of your generated artifact files.',
   'settings.privacyConsentShare': 'Help improve',
   'settings.privacyConsentDecline': 'Not now',

@@ -39,7 +39,7 @@ export const zhCN: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': '研究预览版',
-  'app.brandSubtitle': '由 Nexu Labs 出品',
+  'app.brandSubtitle': '由 Open Design 出品',
   'app.welcomeLoading': '正在加载工作区…',
 
   'settings.welcomeKicker': '欢迎',

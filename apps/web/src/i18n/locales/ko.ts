@@ -41,7 +41,7 @@ export const ko: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'Research Preview',
-  'app.brandSubtitle': 'by Nexu Labs',
+  'app.brandSubtitle': 'by Open Design',
   'app.welcomeLoading': '워크스페이스를 불러오는 중…',
 
   'settings.welcomeKicker': '환영합니다',
@@ -167,9 +167,9 @@ export const ko: Dict = {
   'settings.mediaProviderReloadSuccess': '로컬 데몬에서 미디어 제공자 설정을 다시 불러왔습니다.',
   'settings.mediaProviderLoadError': '로컬 데몬에서 미디어 제공자 설정을 불러오지 못했습니다. 지금은 브라우저에 저장된 설정을 사용합니다.',
   'settings.privacy': 'Privacy',
-  'settings.privacyHint': 'What data is shared with the Open Design team',
+  'settings.privacyHint': 'What optional usage data can be shared',
   'settings.privacyConsentKicker': 'Help us improve Open Design',
-  'settings.privacyConsentLead': 'Open Design can share usage data with our team to help us improve. This includes:',
+  'settings.privacyConsentLead': 'Open Design can share optional usage data to help improve the product. This includes:',
   'settings.privacyConsentFooter': 'You can change either of these any time in Settings → Privacy. We never upload the contents of your generated artifact files.',
   'settings.privacyConsentShare': 'Help improve',
   'settings.privacyConsentDecline': 'Not now',

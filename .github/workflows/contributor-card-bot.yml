@@ -44,7 +44,7 @@ jobs:
       - name: Checkout contributor bot
         uses: actions/checkout@v6.0.2
         with:
-          repository: nexu-io/open-design-bot-sandbox
+          repository: Gary-Ge-xixi/open-design-bot-sandbox
           ref: main
 
       - name: Setup pnpm

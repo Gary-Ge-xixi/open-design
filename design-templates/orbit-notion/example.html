@@ -501,7 +501,7 @@
     return (s || '').replace(/《|》/g, '').trim().replace(/\s+/g, '-').replace(/[^\p{L}\p{N}-]/gu, '');
   }
   function notionUrl(title) {
-    return 'https://www.notion.so/nexu/' + slugify(title);
+    return 'https://www.notion.so/example-org/' + slugify(title);
   }
   document.querySelectorAll('.page-link').forEach(span => {
     const url = notionUrl(span.textContent);

@@ -41,7 +41,7 @@ export const uk: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'Попередній перегляд',
-  'app.brandSubtitle': 'від Nexu Labs',
+  'app.brandSubtitle': 'від Open Design',
   'app.welcomeLoading': 'Завантаження робочого простору…',
 
   'settings.welcomeKicker': 'Ласкаво просимо',
@@ -168,9 +168,9 @@ export const uk: Dict = {
   'settings.mediaProviderReloadSuccess': 'Налаштування медіапровайдерів повторно завантажено з локального демона.',
   'settings.mediaProviderLoadError': 'Не вдалося завантажити налаштування медіапровайдерів із локального демона. Наразі використовуються налаштування, збережені в браузері.',
   'settings.privacy': 'Privacy',
-  'settings.privacyHint': 'What data is shared with the Open Design team',
+  'settings.privacyHint': 'What optional usage data can be shared',
   'settings.privacyConsentKicker': 'Help us improve Open Design',
-  'settings.privacyConsentLead': 'Open Design can share usage data with our team to help us improve. This includes:',
+  'settings.privacyConsentLead': 'Open Design can share optional usage data to help improve the product. This includes:',
   'settings.privacyConsentFooter': 'You can change either of these any time in Settings → Privacy. We never upload the contents of your generated artifact files.',
   'settings.privacyConsentShare': 'Help improve',
   'settings.privacyConsentDecline': 'Not now',

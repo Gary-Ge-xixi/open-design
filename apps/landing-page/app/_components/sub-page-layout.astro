@@ -39,7 +39,7 @@ const headerHtml = renderToStaticMarkup(
 );
 const ldArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
-const REPO = 'https://github.com/nexu-io/open-design';
+const REPO = 'https://github.com/Gary-Ge-xixi/open-design';
 ---
 
 <!doctype html>
@@ -146,7 +146,7 @@ const REPO = 'https://github.com/nexu-io/open-design';
 
         const stars = document.querySelector('[data-github-stars]');
         if (stars) {
-          fetch('https://api.github.com/repos/nexu-io/open-design', {
+          fetch('https://api.github.com/repos/Gary-Ge-xixi/open-design', {
             headers: { Accept: 'application/vnd.github+json' },
           })
             .then((r) => (r.ok ? r.json() : Promise.reject(new Error('http error'))))

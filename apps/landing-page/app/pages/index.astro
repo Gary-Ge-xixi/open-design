@@ -97,7 +97,7 @@ const pageHtml = renderToStaticMarkup(
 
           const stars = document.querySelector('[data-github-stars]');
           if (stars) {
-            fetch('https://api.github.com/repos/nexu-io/open-design', {
+            fetch('https://api.github.com/repos/Gary-Ge-xixi/open-design', {
               headers: { Accept: 'application/vnd.github+json' },
             })
               .then((r) => (r.ok ? r.json() : Promise.reject(new Error('http error'))))
@@ -115,7 +115,7 @@ const pageHtml = renderToStaticMarkup(
           // each slot keeps the layout sane if the request fails or 403s.
           const versionSlots = document.querySelectorAll('[data-github-version]');
           if (versionSlots.length === 0) return;
-          fetch('https://api.github.com/repos/nexu-io/open-design/releases/latest', {
+          fetch('https://api.github.com/repos/Gary-Ge-xixi/open-design/releases/latest', {
             headers: { Accept: 'application/vnd.github+json' },
           })
             .then((r) => (r.ok ? r.json() : Promise.reject(new Error('http error'))))
@@ -137,7 +137,7 @@ const pageHtml = renderToStaticMarkup(
             op7418: 'guizang',
             alchaincyf: 'huashu',
             OpenCoworkAI: 'codesign',
-            'nexu-io': 'studio',
+            'Gary-Ge-xixi': 'studio',
             lewislulu: 'html-ppt',
           };
           const roleFor = (login, contributions) =>
@@ -171,7 +171,7 @@ const pageHtml = renderToStaticMarkup(
             return link;
           };
 
-          fetch('https://api.github.com/repos/nexu-io/open-design/contributors?per_page=12', {
+          fetch('https://api.github.com/repos/Gary-Ge-xixi/open-design/contributors?per_page=12', {
             headers: { Accept: 'application/vnd.github+json' },
           })
             .then((r) => (r.ok ? r.json() : Promise.reject(new Error('http error'))))
@@ -190,7 +190,7 @@ const pageHtml = renderToStaticMarkup(
               live.push({
                 handle: 'you',
                 role: 'be next',
-                href: 'https://github.com/nexu-io/open-design/graphs/contributors',
+                href: 'https://github.com/Gary-Ge-xixi/open-design/graphs/contributors',
               });
               if (count) count.textContent = String(Math.max(0, live.length - 1));
               track.replaceChildren(

@@ -56,8 +56,8 @@ for (const entry of automatedUiScenarios().filter(
           json: {
             designSystems: [
               {
-                id: 'nexu-soft-tech',
-                title: 'Nexu Soft Tech',
+                id: 'open-soft-tech',
+                title: 'Open Soft Tech',
                 category: 'Product',
                 summary: 'Warm utility system for product interfaces.',
                 swatches: ['#F7F4EE', '#D6CBBF', '#1F2937', '#D97757'],
@@ -493,13 +493,13 @@ async function runDesignSystemSelectionFlow(
   await createProjectNameOnly(page, entry);
   await page.getByTestId('design-system-trigger').click();
   await expect(page.getByTestId('design-system-search')).toBeVisible();
-  await page.getByTestId('design-system-search').fill('Nexu');
-  await page.getByRole('option', { name: /Nexu Soft Tech/i }).click();
-  await expect(page.getByTestId('design-system-trigger')).toContainText('Nexu Soft Tech');
+  await page.getByTestId('design-system-search').fill('Open');
+  await page.getByRole('option', { name: /Open Soft Tech/i }).click();
+  await expect(page.getByTestId('design-system-trigger')).toContainText('Open Soft Tech');
   await page.getByTestId('create-project').click();
 
   await expect(page).toHaveURL(/\/projects\//);
-  await expect(page.getByTestId('project-meta')).toContainText('Nexu Soft Tech');
+  await expect(page.getByTestId('project-meta')).toContainText('Open Soft Tech');
   await expect(page.getByTestId('chat-composer')).toBeVisible();
 }
 

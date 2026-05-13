@@ -188,7 +188,7 @@ will not gate-keep on style.
 
 When converting between Simplified and Traditional Chinese, prefer
 Taiwan-specific phrasing in zh-TW rather than character-only conversion.
-This list grew out of [PR #194](https://github.com/nexu-io/open-design/pull/194)
+This list grew out of [PR #194](https://github.com/Gary-Ge-xixi/open-design/pull/194)
 and is meant as a starting point, not a rulebook.
 
 #### Core terms
@@ -267,7 +267,7 @@ on them now, with rough triggers for revisiting:
   custom `.src.md` build scripts, All Contributors-style tooling).
   Re-evaluate once the project hits ≥15 locales **or** README structural
   edits become more frequent than monthly. Discussion in
-  [#195](https://github.com/nexu-io/open-design/issues/195): template-driven
+  [#195](https://github.com/Gary-Ge-xixi/open-design/issues/195): template-driven
   generation solves the "update line 27 in 10 README variants" brittleness,
   but forces a shared structure that today's locale variants intentionally
   diverge from (e.g. `README.zh-TW.md`'s "上手體驗" section, the pt-BR /
@@ -291,4 +291,4 @@ discussions:
   smaller language communities — adjust if real data shows otherwise.
 
 If you have an opinion on any of the above, open an issue or comment on
-[#195](https://github.com/nexu-io/open-design/issues/195).
+[#195](https://github.com/Gary-Ge-xixi/open-design/issues/195).

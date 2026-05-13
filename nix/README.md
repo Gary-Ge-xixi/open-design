@@ -13,7 +13,7 @@ both.
 | ------------------------------------------ | -------------------------------------------------------------------------------------- |
 | `packages.<system>.daemon`                 | The `@open-design/daemon` package — produces `bin/od`. Default output.                 |
 | `packages.<system>.web`                    | The Next.js static export (`apps/web/out/`) ready to drop into any static file server. |
-| `apps.<system>.default`                    | `nix run github:nexu-io/open-design` — boots the daemon.                               |
+| `apps.<system>.default`                    | `nix run github:Gary-Ge-xixi/open-design` — boots the daemon.                               |
 | `devShells.<system>.default`               | Node 24 + Corepack-pinned pnpm 10.33 — reproduces `pnpm install` locally.              |
 | `homeManagerModules.{default,open-design}` | Home Manager module — primary individual-developer interface.                          |
 | `nixosModules.{default,open-design}`       | NixOS module — secondary, for shared/server installs.                                  |
@@ -21,8 +21,8 @@ both.
 ## Try it without installing
 
 ```bash
-nix run github:nexu-io/open-design        # boots the daemon on :7457
-nix develop github:nexu-io/open-design    # drop into the dev shell
+nix run github:Gary-Ge-xixi/open-design        # boots the daemon on :7457
+nix develop github:Gary-Ge-xixi/open-design    # drop into the dev shell
 ```
 
 ## (1) Home Manager — the recommended path
@@ -32,7 +32,7 @@ default module:
 
 ```nix
 {
-  inputs.open-design.url = "github:nexu-io/open-design";
+  inputs.open-design.url = "github:Gary-Ge-xixi/open-design";
 
   outputs = { self, home-manager, open-design, ... }: {
     homeConfigurations.you = home-manager.lib.homeManagerConfiguration {
@@ -55,8 +55,8 @@ What this wires up:
 
 - Linux: `systemd --user` units `open-design.service` and (optionally)
   `open-design-web.service`. `systemctl --user status open-design`.
-- macOS: `launchd` agents `io.nexu.open-design` and (optionally)
-  `io.nexu.open-design-web`. `launchctl print gui/$UID/io.nexu.open-design`.
+- macOS: `launchd` agents `io.open-design.app` and (optionally)
+  `io.open-design.app-web`. `launchctl print gui/$UID/io.open-design.app`.
 - Data lives in `$HOME/.od/` by default — override `dataDir` to relocate.
 
 ## (2) NixOS — for shared/server installs
@@ -232,5 +232,5 @@ at the top of each file and re-run. Bump the hash whenever
 `.github/workflows/nix-check.yml` runs `nix flake check` followed by
 separate `nix build .#daemon` and `nix build .#web` steps on each push
 that touches the flake or the lockfile. Build artifacts are cached on
-the `nexu-open-design` Cachix instance — PRs from forks read from the
+the `open-design-cache` Cachix instance — PRs from forks read from the
 cache without needing the auth token.

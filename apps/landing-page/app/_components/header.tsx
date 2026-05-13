@@ -10,7 +10,7 @@
  * root and are kept in sync with `getCatalogCounts()` at build time.
  */
 
-const REPO = 'https://github.com/nexu-io/open-design';
+const REPO = 'https://github.com/Gary-Ge-xixi/open-design';
 const REPO_RELEASES = `${REPO}/releases`;
 
 const ext = {

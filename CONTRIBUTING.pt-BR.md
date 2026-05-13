@@ -18,7 +18,7 @@ Este guia diz exatamente onde olhar para cada tipo de contribuição e qual a ba
 | Adicionar uma feature, corrigir um bug, trazer um padrão de UX do [`open-codesign`][ocod] | código | `apps/web/src/`, `apps/daemon/` | PR normal |
 | Melhorar docs, traduzir uma seção para Français / Deutsch / 中文, corrigir typos | docs | `README.md`, `README.fr.md`, `README.de.md`, `README.zh-CN.md`, `docs/`, `QUICKSTART.md` | um PR |
 
-Se você não tem certeza em qual balde sua ideia se encaixa, [abra primeiro uma discussion / issue](https://github.com/nexu-io/open-design/issues/new) e te apontamos para a superfície certa.
+Se você não tem certeza em qual balde sua ideia se encaixa, [abra primeiro uma discussion / issue](https://github.com/Gary-Ge-xixi/open-design/issues/new) e te apontamos para a superfície certa.
 
 ---
 
@@ -27,7 +27,7 @@ Se você não tem certeza em qual balde sua ideia se encaixa, [abra primeiro uma
 O setup completo numa página mora em [`QUICKSTART.pt-BR.md`](QUICKSTART.pt-BR.md). O TL;DR para contribuidores:
 
 ```bash
-git clone https://github.com/nexu-io/open-design.git
+git clone https://github.com/Gary-Ge-xixi/open-design.git
 cd open-design
 corepack enable           # selects the pinned pnpm from packageManager
 pnpm install
@@ -268,7 +268,7 @@ Para bugs da pilha de prompt ("o agente emitiu um hero com gradiente roxo, a bla
 
 ## Fazendo perguntas
 
-- Pergunta de arquitetura, pergunta de design, "isso é bug ou mau uso" → [GitHub Discussions](https://github.com/nexu-io/open-design/discussions) (preferido — pesquisável para o próximo).
+- Pergunta de arquitetura, pergunta de design, "isso é bug ou mau uso" → [GitHub Discussions](https://github.com/Gary-Ge-xixi/open-design/discussions) (preferido — pesquisável para o próximo).
 - "Como escrevo uma skill que faz X" → Abra uma discussion. Respondemos e transformamos a resposta em [`docs/skills-protocol.md`](docs/skills-protocol.md) se for um padrão faltante.
 
 ---
@@ -292,15 +292,14 @@ Se não tem certeza se sua ideia se encaixa, abra uma discussion antes de escrev
 
 Se você vem contribuindo de forma consistente e quer saber como é o caminho para se tornar um Maintainer, as regras estão em **[`MAINTAINERS.md`](MAINTAINERS.md)**. A versão curta:
 
-- Um Maintainer pode revisar, aprovar e fechar issues. O botão de merge continua com o Core Team — sua aprovação ainda conta como a aprovação obrigatória para merge.
-- A barra é **≥ 20 merged PRs** mais uma verificação publicada de qualidade da conta (anti-bot, anti-sock-puppet) mais um julgamento do Core Team sobre a qualidade da contribuição. Não há formulário de inscrição; o Core Team levanta candidatos internamente e entra em contato.
+- Um Maintainer pode revisar, aprovar e fechar issues. O botão de merge continua com o repository owner — sua aprovação ainda conta como a aprovação obrigatória para merge.
+- A barra é **≥ 20 merged PRs** mais uma verificação publicada de qualidade da conta (anti-bot, anti-sock-puppet) mais um julgamento do repository owner sobre a qualidade da contribuição. Não há formulário de inscrição; o repository owner levanta candidatos internamente e entra em contato.
 - **Não há cotas, nem SLAs, nem mandato fixo.** Sair é fácil e reversível (Emeritus → volte quando a vida acalmar).
 - Todos os limiares, o fluxo de nomeação, as regras de step-down e o waiver de projeto inicial estão em [`MAINTAINERS.md`](MAINTAINERS.md). Leia esse documento se algo acima te interessar.
 
-O tl;dr: mande bons PRs, revise com cuidado, apareça nas [Discussions][discussions] / no [Discord][discord], e o resto se resolve sozinho.
+O tl;dr: mande bons PRs, revise com cuidado, apareça nas [Discussions][discussions], e o resto se resolve sozinho.
 
-[discussions]: https://github.com/nexu-io/open-design/discussions
-[discord]: https://discord.gg/qhbcCH8Am4
+[discussions]: https://github.com/Gary-Ge-xixi/open-design/discussions
 
 ---
 

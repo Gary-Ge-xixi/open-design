@@ -9,23 +9,22 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/issues"><img alt="Issues" src="https://img.shields.io/github/issues/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
-  <a href="https://github.com/nexu-io/open-design/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/nexu-io/open-design?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Gary-Ge-xixi/open-design?style=for-the-badge&labelColor=0d1117&color=ffd700&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/Gary-Ge-xixi/open-design?style=for-the-badge&labelColor=0d1117&color=2ecc71&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/issues"><img alt="Issues" src="https://img.shields.io/github/issues/Gary-Ge-xixi/open-design?style=for-the-badge&labelColor=0d1117&color=ff6b6b&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/Gary-Ge-xixi/open-design?style=for-the-badge&labelColor=0d1117&color=9b59b6&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/Gary-Ge-xixi/open-design?style=for-the-badge&labelColor=0d1117&color=3498db&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/commits/main"><img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/Gary-Ge-xixi/open-design?style=for-the-badge&labelColor=0d1117&color=e67e22&logo=git&logoColor=white" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/Gary-Ge-xixi/open-design?style=for-the-badge&labelColor=0d1117&color=8e44ad&logo=git&logoColor=white" /></a>
 </p>
 
 <p align="center">
   <a href="https://open-design.ai/"><img alt="تنزيل" src="https://img.shields.io/badge/%D8%AA%D9%86%D8%B2%D9%8A%D9%84-open--design.ai-ff6b35?style=flat-square" /></a>
-  <a href="https://github.com/nexu-io/open-design/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/nexu-io/open-design?style=flat-square&color=blueviolet&label=release&include_prereleases&display_name=tag" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/Gary-Ge-xixi/open-design?style=flat-square&color=blueviolet&label=release&include_prereleases&display_name=tag" /></a>
   <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square" /></a>
   <a href="#الوكلاء-المدعومون"><img alt="Agents" src="https://img.shields.io/badge/agents-16%20CLIs%20%2B%20BYOK%20proxy-black?style=flat-square" /></a>
   <a href="#أنظمة-التصميم"><img alt="Design systems" src="https://img.shields.io/badge/design%20systems-72-orange?style=flat-square" /></a>
   <a href="#الـ-skills"><img alt="Skills" src="https://img.shields.io/badge/skills-31-teal?style=flat-square" /></a>
-  <a href="https://discord.gg/qhbcCH8Am4"><img alt="Discord" src="https://img.shields.io/badge/discord-انضم-5865F2?style=flat-square&logo=discord&logoColor=white" /></a>
   <a href="QUICKSTART.md"><img alt="Quickstart" src="https://img.shields.io/badge/quickstart-3%20commands-green?style=flat-square" /></a>
 </p>
 
@@ -66,7 +65,7 @@
 | **الاستمرارية** | SQLite في `.od/app.sqlite`: projects · conversations · messages · tabs · قوالب المستخدم. افتح المشروع غداً، فتجد بطاقة todo والملفات المفتوحة في مكانها تماماً. |
 | **دورة الحياة** | مدخل واحد: `pnpm tools-dev` (start / stop / run / status / logs / inspect / check) — يُقلع daemon + web (+ desktop) بـ stamps مكتوبة |
 | **سطح المكتب** | غلاف Electron اختياري بسبيل renderer معزول + sidecar IPC (STATUS / EVAL / SCREENSHOT / CONSOLE / CLICK / SHUTDOWN) — يُشغّل `tools-dev inspect desktop screenshot` لاختبارات E2E |
-| **أهداف النشر** | محلياً (`pnpm tools-dev`) · طبقة الويب على Vercel · تطبيق سطح مكتب Electron مُحزَّم لـ macOS (Apple Silicon) و Windows (x64) — حمّله من [open-design.ai](https://open-design.ai/) أو من [أحدث release](https://github.com/nexu-io/open-design/releases) |
+| **أهداف النشر** | محلياً (`pnpm tools-dev`) · طبقة الويب على Vercel · تطبيق سطح مكتب Electron مُحزَّم لـ macOS (Apple Silicon) و Windows (x64) — حمّله من [open-design.ai](https://open-design.ai/) أو من [أحدث release](https://github.com/Gary-Ge-xixi/open-design/releases) |
 | **الترخيص** | Apache-2.0 |
 
 [acd2]: https://github.com/VoltAgent/awesome-design-md
@@ -308,12 +307,12 @@ DISCOVERY directives  (turn-1 form, turn-2 brand branch, TodoWrite, 5-dim critiq
 أسرع طريقة لتجربة Open Design هي تطبيق سطح المكتب الجاهز — بدون Node، بدون pnpm، بدون clone:
 
 - **[open-design.ai](https://open-design.ai/)** — صفحة التنزيل الرسمية
-- **[إصدارات GitHub](https://github.com/nexu-io/open-design/releases)**
+- **[إصدارات GitHub](https://github.com/Gary-Ge-xixi/open-design/releases)**
 
 ### التشغيل من المصدر
 
 ```bash
-git clone https://github.com/nexu-io/open-design.git
+git clone https://github.com/Gary-Ge-xixi/open-design.git
 cd open-design
 corepack enable
 corepack pnpm --version   # should print 10.33.2
@@ -758,7 +757,7 @@ OD لا يقف عند الكود. نفس واجهة الـ chat التي تنت�
 - [ ] وصفة نشر Vercel + tunnel (Topology B)
 - [ ] أمر واحد `npx od init` لإنشاء مشروع بـ `DESIGN.md`
 - [ ] متجر skills (`od skills install <github-repo>`) وسطح CLI `od skill add | list | remove | test` (مسوَّد في [`docs/skills-protocol.md`](docs/skills-protocol.md)، التنفيذ معلَّق)
-- [x] حزمة Electron من `apps/packaged/` — تنزيلات macOS (Apple Silicon) و Windows (x64) على [open-design.ai](https://open-design.ai/) و [صفحة إصدارات GitHub](https://github.com/nexu-io/open-design/releases)
+- [x] حزمة Electron من `apps/packaged/` — تنزيلات macOS (Apple Silicon) و Windows (x64) على [open-design.ai](https://open-design.ai/) و [صفحة إصدارات GitHub](https://github.com/Gary-Ge-xixi/open-design/releases)
 
 تسليم بمراحل → [`docs/roadmap.md`](docs/roadmap.md).
 
@@ -769,10 +768,10 @@ OD لا يقف عند الكود. نفس واجهة الـ chat التي تنت�
 ## أعطنا ★
 
 <p align="center">
-  <a href="https://github.com/nexu-io/open-design"><img src="docs/assets/star-us.png" alt="Star Open Design on GitHub — github.com/nexu-io/open-design" width="100%" /></a>
+  <a href="https://github.com/Gary-Ge-xixi/open-design"><img src="docs/assets/star-us.png" alt="Star Open Design on GitHub — github.com/Gary-Ge-xixi/open-design" width="100%" /></a>
 </p>
 
-إن وفّر هذا عليك ثلاثين دقيقة — أعطه ★. النجوم لا تدفع الإيجار، لكنها تخبر المصمّم والوكيل والمساهم القادم أن هذه التجربة تستحقّ انتباههم. نقرة واحدة، ثلاث ثوانٍ، إشارة حقيقية: [github.com/nexu-io/open-design](https://github.com/nexu-io/open-design).
+إن وفّر هذا عليك ثلاثين دقيقة — أعطه ★. النجوم لا تدفع الإيجار، لكنها تخبر المصمّم والوكيل والمساهم القادم أن هذه التجربة تستحقّ انتباههم. نقرة واحدة، ثلاث ثوانٍ، إشارة حقيقية: [github.com/Gary-Ge-xixi/open-design](https://github.com/Gary-Ge-xixi/open-design).
 
 ## المساهمة
 
@@ -788,11 +787,11 @@ Issues و PRs و skills جديدة وأنظمة تصميم جديدة، كلّه
 
 شكراً لكلّ من ساعد في دفع Open Design للأمام — بكود، بوثائق، بملاحظات، بـ skills جديدة، بأنظمة تصميم جديدة، أو حتى بـ issue حادّة. كلّ مساهمة حقيقية تهمّ، والجدار أدناه أسهل طريقة لقول ذلك علناً.
 
-<a href="https://github.com/nexu-io/open-design/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=nexu-io/open-design&cache_bust=2026-05-12" alt="Open Design contributors" />
+<a href="https://github.com/Gary-Ge-xixi/open-design/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Gary-Ge-xixi/open-design&cache_bust=2026-05-12" alt="Open Design contributors" />
 </a>
 
-إن شحنت أوّل PR — مرحباً. تصنيف [`good-first-issue`](https://github.com/nexu-io/open-design/labels/good-first-issue) هو نقطة الدخول.
+إن شحنت أوّل PR — مرحباً. تصنيف [`good-first-issue`](https://github.com/Gary-Ge-xixi/open-design/labels/good-first-issue) هو نقطة الدخول.
 
 ## نشاط المستودع
 
@@ -804,11 +803,11 @@ Issues و PRs و skills جديدة وأنظمة تصميم جديدة، كلّه
 
 ## تاريخ النجوم
 
-<a href="https://star-history.com/#nexu-io/open-design&Date">
+<a href="https://star-history.com/#Gary-Ge-xixi/open-design&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&theme=dark&cache_bust=2026-05-12" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-12" />
-    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=nexu-io/open-design&type=Date&cache_bust=2026-05-12" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Gary-Ge-xixi/open-design&type=Date&theme=dark&cache_bust=2026-05-12" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Gary-Ge-xixi/open-design&type=Date&cache_bust=2026-05-12" />
+    <img alt="Open Design star history" src="https://api.star-history.com/svg?repos=Gary-Ge-xixi/open-design&type=Date&cache_bust=2026-05-12" />
   </picture>
 </a>
 

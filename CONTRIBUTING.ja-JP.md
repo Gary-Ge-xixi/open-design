@@ -18,7 +18,7 @@
 | 機能追加、バグ修正、[`open-codesign`][ocod] から UX パターンを移植 | コード | `apps/web/src/`、`apps/daemon/` | 通常の PR |
 | ドキュメント改善、Français / Deutsch / 中文 への翻訳、タイポ修正 | ドキュメント | `README.md`、`README.fr.md`、`README.de.md`、`README.zh-CN.md`、`docs/`、`QUICKSTART.md` | PR 1 つ |
 
-アイデアがどのカテゴリに該当するか分からない場合は、[まず discussion / issue を作成](https://github.com/nexu-io/open-design/issues/new)してください。適切な場所をご案内します。
+アイデアがどのカテゴリに該当するか分からない場合は、[まず discussion / issue を作成](https://github.com/Gary-Ge-xixi/open-design/issues/new)してください。適切な場所をご案内します。
 
 ---
 
@@ -27,7 +27,7 @@
 完全なセットアップ手順は [`QUICKSTART.md`](QUICKSTART.md) にあります。コントリビューター向けの要約：
 
 ```bash
-git clone https://github.com/nexu-io/open-design.git
+git clone https://github.com/Gary-Ge-xixi/open-design.git
 cd open-design
 corepack enable           # packageManager で指定された pnpm を選択
 pnpm install
@@ -238,7 +238,7 @@ CLA は求めません。Apache-2.0 でカバーされます。あなたのコ�
 
 ## 質問する
 
-- アーキテクチャの質問、設計の質問、「これはバグか使い方の問題か」→ [GitHub Discussions](https://github.com/nexu-io/open-design/discussions)（推奨 — 次の人が検索できます）。
+- アーキテクチャの質問、設計の質問、「これはバグか使い方の問題か」→ [GitHub Discussions](https://github.com/Gary-Ge-xixi/open-design/discussions)（推奨 — 次の人が検索できます）。
 - 「X をする Skill はどう書けばいい？」→ Discussion を作成してください。回答し、不足しているパターンであれば [`docs/skills-protocol.md`](docs/skills-protocol.md) に反映します。
 
 ---
@@ -267,10 +267,9 @@ CLA は求めません。Apache-2.0 でカバーされます。あなたのコ�
 - **クォータ、SLAs、固定任期はありません。** ステップダウンは容易かつ可逆的です（Emeritus → 生活が落ち着いたら復帰）。
 - すべての閾値、推薦フロー、ステップダウンルール、初期プロジェクトの免除規定は [`MAINTAINERS.md`](MAINTAINERS.md) に記載されています。上記のいずれかに興味があれば、そのドキュメントを読んでください。
 
-tl;dr：良い PR を出し、丁寧にレビューし、[Discussions][discussions] / [Discord][discord] に顔を出していれば、あとは自然と道が開けます。
+tl;dr：良い PR を出し、丁寧にレビューし、[Discussions][discussions] に顔を出していれば、あとは自然と道が開けます。
 
-[discussions]: https://github.com/nexu-io/open-design/discussions
-[discord]: https://discord.gg/qhbcCH8Am4
+[discussions]: https://github.com/Gary-Ge-xixi/open-design/discussions
 
 ---
 

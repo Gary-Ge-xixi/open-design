@@ -41,7 +41,7 @@ export const ptBR: Dict = {
 
   'app.brand': 'Open Design',
   'app.brandPill': 'Prévia de pesquisa',
-  'app.brandSubtitle': 'por Nexu Labs',
+  'app.brandSubtitle': 'por Open Design',
   'app.welcomeLoading': 'Carregando área de trabalho…',
 
   'settings.welcomeKicker': 'Bem-vindo',
@@ -166,9 +166,9 @@ export const ptBR: Dict = {
   'settings.mediaProviderReloadSuccess': 'As configurações dos provedores de mídia foram recarregadas do daemon local.',
   'settings.mediaProviderLoadError': 'Não foi possível carregar as configurações dos provedores de mídia do daemon local. Usando por enquanto as configurações salvas no navegador.',
   'settings.privacy': 'Privacy',
-  'settings.privacyHint': 'What data is shared with the Open Design team',
+  'settings.privacyHint': 'What optional usage data can be shared',
   'settings.privacyConsentKicker': 'Help us improve Open Design',
-  'settings.privacyConsentLead': 'Open Design can share usage data with our team to help us improve. This includes:',
+  'settings.privacyConsentLead': 'Open Design can share optional usage data to help improve the product. This includes:',
   'settings.privacyConsentFooter': 'You can change either of these any time in Settings → Privacy. We never upload the contents of your generated artifact files.',
   'settings.privacyConsentShare': 'Help improve',
   'settings.privacyConsentDecline': 'Not now',
